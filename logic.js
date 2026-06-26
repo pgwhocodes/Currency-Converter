@@ -6,7 +6,6 @@ let btn = document.querySelector("button");
 let inputs = document.querySelectorAll("input");
 let clickCount = 0;
 let swapBtn = document.querySelector(".swap-btn");
-let flagImg = document.querySelector("#flag-img");
 
 for (select of dropDowns)   {
     for(currCode in countryList)    {
