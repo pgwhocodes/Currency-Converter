@@ -1,0 +1,228 @@
+@font-face{
+    font-family: "Google Sans Flex";
+    src: url('fonts//GoogleSansFlex_24pt-SemiBold.ttf') format('truetype');
+}
+
+body{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    font-family: "Google Sans Flex", sans-serif;
+}
+
+main    {
+    width: 380px;
+    border-radius: 1rem;
+    background-color: #E5E7E8;
+    box-shadow: 0 0 0.8rem rgb(131, 131, 131);
+}
+
+header  {
+    line-height: 87px;
+    font-size: 23px;
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    font-family: "Google Sans Flex";
+    color: white;
+    background-color: #02A29B;
+}
+
+form    {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.text, #con-amount  {
+    font-size: 15px;
+    text-align: left;
+}
+
+.text   {
+    margin-top: 3px;
+}
+
+.convert-box    {
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width: 315px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7rem;
+    background-color: rgb(200, 200, 200);;
+    box-shadow: 0 0 0.7rem rgb(160, 158, 160);
+    position: relative;
+}
+
+.select-container {
+    position: absolute;
+    left: 0;
+    height: 60px;
+    width: 149px;
+    padding-left: 13px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    appearance: none;
+    border-top-left-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+select {
+    height: 60px;
+    width: 149px;
+    font-size: 19px;
+    opacity: 0.7;
+    appearance: none;
+    font-family: "Google Sans Flex", sans-serif;
+    border: none;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    -webkit-border: none;
+    cursor: pointer;
+}
+
+.amount {
+    position: absolute;
+    right: 0;
+    height: 60px;
+    width: 132px;
+    padding-right: 18px;
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    background-color: rgb(255, 255, 255);
+}
+
+input    {
+    height: 58px;
+    font-size: 22px;
+    font-family: "Google Sans Flex", sans-serif;
+    appearance: none;
+    text-align: right;
+    border: none;
+    border-top-right-radius: 0.7rem;
+    border-bottom-right-radius: 0.7rem;
+    color: black;
+    width: 132px;
+    padding-left: 5px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+input::-webkit-inner-spin-button, input::-webkit-inner-spin-button  {
+    appearance: none;
+}
+
+.select-container:hover, .amount:hover {
+    background-color: rgb(245, 245, 245);
+    select, input {
+    background-color: rgb(245, 245, 245);
+}
+}
+
+.select-container:focus, .amount:focus {
+    select, input  {
+        outline: none;
+    }
+}
+    
+select:focus, input:focus    {
+    outline: none;
+}
+
+.swap-btn {
+    display: flex;
+    justify-content: center;
+    background-color: #02A29B;
+    padding: 14px;
+    width: 25px;
+    margin: 6px;
+    border-radius: 50%;
+
+}
+
+.swap-img {
+    width: 25px;
+    height: 22px;
+}
+
+#con-amount {
+    font-size: 18px;
+}
+
+.btn-div   {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+form button {  
+    height: 58px;
+    width: 270px;
+    color: white;
+    background-color: #02A29B;
+    border: 3px solid #02A29B;
+    border-radius: 2rem;
+    font-family: "Google Sans Flex";
+    font-size: 18px;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+form button:hover  {
+    background-color: #00918a;
+    border: 3px solid #00918a;
+}
+
+.swap-btn, .swap-img, form button {
+    -webkit-tap-highlight-color: transparent;
+    appearance: none;
+}
+
+@media (max-width: 550px) {
+
+    body{
+        height: 75vh;
+    }
+    main    {
+        width: 330px;
+    }
+    form    {
+        margin: 40px 30px;
+    }
+    header  {
+        font-size: 21px;
+        line-height: 77px;
+        margin-bottom: -5px;
+    }
+    .convert-box    {
+        width: 273px;
+    }
+    .select-container {
+        width: 125px;
+    }
+    .amount {
+        width: 115px;
+    }
+    input {
+        width: 116.5px;
+    }
+    select {
+        width: 128px;
+    }
+    #con-amount {
+        font-size: 16px;
+        margin: 2px 0;
+    }
+
+} 
