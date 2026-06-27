@@ -5,7 +5,9 @@ let img = document.querySelectorAll("img");
 let btn = document.querySelector("button");
 let inputs = document.querySelectorAll("input");
 let clickCount = 0;
+let swapClickCount = 0;
 let swapBtn = document.querySelector(".swap-btn");
+let swapImg = document.querySelector(".swap-img");
 
 for (select of dropDowns)   {
     for(currCode in countryList)    {
@@ -75,6 +77,8 @@ window.addEventListener("load", () => {
     updateExchangeRate();
 });
 
+let degree = 0;
+
 swapBtn.addEventListener("click", () => {
 
     let temp = dropDowns[0].value;
@@ -85,11 +89,15 @@ swapBtn.addEventListener("click", () => {
     img[0].src = img[2].src;
     img[2].src = tempImg;
 
-
     let tempInput = inputs[0].value;
     inputs[0].value = Number(inputs[1].value.replace(/,/g, "")); 
     inputs[1].value = Number(tempInput).toLocaleString("en-US",
         { minimumFractionDigits: 2, maximumFractionDigits: 2 }
     );
 
+    degree = degree+180;
+    swapImg.style.transform = `rotate(${degree}deg)`;
+    swapImg.style.transition = "transform 0.3s ease";
+    swapClickCount++;
+    
 });

@@ -65,7 +65,7 @@ form    {
     position: absolute;
     left: 0;
     height: 60px;
-    width: 149px;
+    width: 143.5px;
     padding-left: 13px;
     display: flex;
     align-items: center;
@@ -79,7 +79,6 @@ form    {
 
 select {
     height: 60px;
-    width: 149px;
     font-size: 19px;
     opacity: 0.7;
     appearance: none;
@@ -95,8 +94,8 @@ select {
     position: absolute;
     right: 0;
     height: 60px;
-    width: 132px;
-    padding-right: 18px;
+    width: 150.5px;
+    padding-right: 5px;
     border-top-right-radius: 0.7rem;
     border-bottom-right-radius: 0.7rem;
     background-color: rgb(255, 255, 255);
@@ -112,7 +111,7 @@ input    {
     border-top-right-radius: 0.7rem;
     border-bottom-right-radius: 0.7rem;
     color: black;
-    width: 132px;
+    width: 137px;
     padding-left: 5px;
     background-color: rgb(255, 255, 255);
     cursor: pointer;
@@ -144,15 +143,15 @@ select:focus, input:focus    {
     justify-content: center;
     background-color: #02A29B;
     padding: 14px;
-    width: 25px;
-    margin: 6px;
+    width: 21px;
+    margin: 2px;
     border-radius: 50%;
 
 }
 
 .swap-img {
-    width: 25px;
-    height: 22px;
+    width: 20px;
+    height: 19px;
 }
 
 #con-amount {
@@ -209,10 +208,11 @@ form button:hover  {
         width: 273px;
     }
     .select-container {
-        width: 125px;
+        width: 123.5px;
     }
     .amount {
-        width: 115px;
+        width: 121px;
+        padding-right: 13px;
     }
     input {
         width: 116.5px;
