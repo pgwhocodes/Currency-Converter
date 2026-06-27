@@ -4,7 +4,7 @@
 }
 
 body{
-    height: 90vh;
+    height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -190,9 +190,6 @@ form button:hover  {
 
 @media (max-width: 550px) {
 
-    body{
-        height: 75vh;
-    }
     main    {
         width: 330px;
     }
